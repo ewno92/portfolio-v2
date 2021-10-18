@@ -1,6 +1,6 @@
 import React from "react";
 import Typical from "react-typical";
-import "./Profile.css";
+import "./Profile.scss";
 const Profile = () => {
   return (
     <div className="profile-container">
