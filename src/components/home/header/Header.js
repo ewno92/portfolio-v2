@@ -57,6 +57,18 @@ const Header = () => {
         >
           Hamburger
         </div>
+        <div className="header-logo">
+          <span>Eun Lee</span>
+        </div>
+        <div
+          className={
+            showHeaderOptions
+              ? "header-options show-hamburget-options"
+              : "header-options"
+          }
+        >
+          {getHeaderOptions()}
+        </div>
       </div>
     </div>
   );
