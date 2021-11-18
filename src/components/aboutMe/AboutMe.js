@@ -41,23 +41,22 @@ const AboutMe = (props) => {
       <div className="about-me-parent">
         <ScreenHeading title={"About Me"} subHeading={"Why Choose Me?"} />
         <div className="about-me-card">
-          <div className="about-me-profile">
-            <div className="about-me-details">
-              <span className="about-me-description">
-                {SCREEN_CONSTANTS.description}
-              </span>
-              <div className="about-me-highlights">
-                <div className="highlight-heading">
-                  <span>{SCREEN_CONSTANTS.highlights.heading}</span>
-                </div>
-                {renderHighlight()}
+          <div className="about-me-profile"></div>
+          <div className="about-me-details">
+            <span className="about-me-description">
+              {SCREEN_CONSTANTS.description}
+            </span>
+            <div className="about-me-highlights">
+              <div className="highlight-heading">
+                <span>{SCREEN_CONSTANTS.highlights.heading}</span>
               </div>
-              <div className="about-me-options">
-                <button className="btn primary-btn">button</button>
-                <a href=".pdf" download=".pdf">
-                  <button className="btn highlighted-btn">button</button>
-                </a>
-              </div>
+              {renderHighlight()}
+            </div>
+            <div className="about-me-options">
+              <button className="btn primary-btn">Hire Me</button>
+              <a href=".pdf" download=".pdf">
+                <button className="btn highlighted-btn">Get Resume</button>
+              </a>
             </div>
           </div>
         </div>
