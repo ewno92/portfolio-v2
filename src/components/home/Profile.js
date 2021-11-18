@@ -24,7 +24,7 @@ const Profile = () => {
           </div>
           <div className="profile-details-role">
             <span className="primary-text">
-              <h1>
+              <h1 className="typical">
                 <Typical
                   loop={Infinity}
                   steps={[
