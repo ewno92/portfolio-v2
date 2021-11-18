@@ -1,15 +1,11 @@
 import React from "react";
 import Profile from "./Profile";
-import Footer from "./Footer/Footer";
-// import "./Home.scss";
-import Header from "./header/Header";
-
+import "./Home.scss";
 const Home = () => {
   return (
     <div className="home-container">
-      <Header />
+      {/* <Header /> */}
       <Profile />
-      <Footer />
     </div>
   );
 };

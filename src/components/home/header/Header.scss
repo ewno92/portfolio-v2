@@ -1,0 +1,99 @@
+.header-container {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  height: 140px;
+  color: var(--white);
+  .header-hamburger {
+    font-size: 30px;
+    display: none;
+    cursor: pointer;
+  }
+  .header-parent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    width: 70%;
+    color: var(--white);
+  }
+  .header-logo {
+    font-size: 50px;
+    font-family: "Poppins ExtraBold";
+    color: var(--white);
+  }
+
+  .header-options {
+    display: flex;
+    align-items: center;
+    width: 60%;
+    justify-content: end;
+    // background-color: white;
+  }
+
+  .header-options {
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 600;
+  }
+
+  .menu {
+    padding-right: 20px;
+  }
+  .header-option-seperator {
+    margin: 0 50px 0 0;
+    color: var(--white);
+  }
+
+  .selected-header-option {
+    color: #ff5823;
+  }
+  @media only screen and (max-width: 1110px) {
+    .header-parent {
+      width: 80%;
+    }
+  }
+  @media only screen and (max-width: 970px) {
+    .header-options {
+      background-color: yellow;
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      left: -100%;
+      top: 0px;
+      height: 100vh;
+      width: 100%;
+      justify-content: space-around;
+      background-color: #1f2235;
+      z-index: 2;
+      transition: all 0.2s ease-in-out;
+    }
+    .show-hamburger-options {
+      left: 0;
+      opacity: 0.9;
+    }
+
+    .header-container {
+      .header-parent {
+        width: 100%;
+        padding: 0 40px;
+        position: relative;
+
+        .header-option-seperator {
+          margin: 0;
+        }
+
+        .selected-header-option {
+          color: var(--white);
+        }
+        .header-option {
+          color: var(--white);
+        }
+      }
+    }
+
+    .header-hamburger {
+      display: block;
+    }
+  }
+}
