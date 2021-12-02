@@ -170,9 +170,11 @@ const Resume = (props) => {
   ];
 
   const resumeBullets = [
-    { label: "Work Experience", logoSrc: "educations.svg" },
-    { label: "Work Experience" },
-    { label: "Work Experience" },
+    { label: "Education", logoSrc: "education.svg" },
+    { label: "Work History", logoSrc: "work-history.svg" },
+    { label: "Programming Skills", logoSrc: "programming-skills.svg" },
+    { label: "Projects", logoSrc: "projects.svg" },
+    { label: "Interests", logoSrc: "interests.svg" },
   ];
 
   const getBullets = () => {
@@ -186,8 +188,8 @@ const Resume = (props) => {
       >
         <img
           className="bullet-logo"
-          //   src={require(`../../assets/Resume/${bullet.logoSrc}`).default}
-          alt="B"
+          src={require(`../icons/${bullet.logoSrc}`).default}
+          alt="icons"
         />
         <span className="bullet-label">{bullet.label}</span>
       </div>
