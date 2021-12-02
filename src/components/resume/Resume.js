@@ -39,6 +39,7 @@ const Resume = (props) => {
     setCarousalOffsetStyle(newCarousalOffset);
     setSelectedBulletIndex(index);
   };
+
   const programmingSkillsDetails = [
     { skill: "JavaScript", ratingPercentage: 85 },
     { skill: "React JS", ratingPercentage: 85 },
@@ -50,6 +51,7 @@ const Resume = (props) => {
     { skill: "HTML", ratingPercentage: 80 },
     { skill: "CSS", ratingPercentage: 80 },
   ];
+
   const projectsDetails = [
     {
       title: "Personal Portfolio Website",
@@ -166,10 +168,13 @@ const Resume = (props) => {
       />
     </div>,
   ];
+
   const resumeBullets = [
     { label: "Work Experience", logoSrc: "educations.svg" },
     { label: "Work Experience" },
+    { label: "Work Experience" },
   ];
+
   const getBullets = () => {
     return resumeBullets.map((bullet, index) => (
       <div

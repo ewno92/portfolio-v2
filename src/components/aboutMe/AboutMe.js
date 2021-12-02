@@ -5,17 +5,9 @@ import "./AboutMe.scss";
 // import Animations from "../../utilities/Animations";
 
 const AboutMe = (props) => {
-  //   let fadeInScreenHandler = (screen) => {
-  //     if (screen.fadeScreen !== props.id)
-  //       return Animations.animations.fadeInScreen(props.id);
-  //   };
-
-  // const fadeInSubscription =
-  //   ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
-
   const SCREEN_CONSTANTS = {
     description:
-      "Full stack web developer with background knowledge of MERN stack with redux along wtih a knock of building applications with utmost efficiency. Strong professional willing to be an asset for an organization",
+      "Full stack web eveloper with background knowledge of MERN stack along with skills of building applications with utmost efficiency. Strong professional willing to be an asset for an organization.",
     highlights: {
       bullets: [
         "Full Stack web development",
