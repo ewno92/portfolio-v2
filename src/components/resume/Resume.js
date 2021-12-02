@@ -54,6 +54,13 @@ const Resume = (props) => {
 
   const projectsDetails = [
     {
+      title: "Cozmo Finance Website",
+      duration: { fromDate: "2020", toDate: "2021" },
+      description:
+        "A Personal Portfolio website to showcase all my details and projects at one place.",
+      subHeading: "Technologies Used: React JS, Bootsrap",
+    },
+    {
       title: "Personal Portfolio Website",
       duration: { fromDate: "2020", toDate: "2021" },
       description:
@@ -61,20 +68,12 @@ const Resume = (props) => {
       subHeading: "Technologies Used: React JS, Bootsrap",
     },
     {
-      title: "Mobile E-shop ",
-      duration: { fromDate: "2020", toDate: "2021" },
-      description:
-        "An ecommerce application designed to sell products online wth payment system integration",
-      subHeading:
-        "Technologies Used:  React Native, Mongo DB, Express Js, Node Js, Redux.",
-    },
-    {
       title: "Ecommerce Website ",
       duration: { fromDate: "2020", toDate: "2021" },
       description:
-        "Online ecommerce website for showcasing and selling products onlne with payment system integration, both Paypal and Stripe",
+        "Ecommerce website for showcasing and selling products onlne with payment system integration, both Paypal and Stripe",
       subHeading:
-        "Technologies Used: Mongo DB, Epress Js, React Js, Node JS, Redux, Bootstrap.",
+        "Technologies Used: Mongo DB, Epress Js, Next Js, Node JS, Context, Bootstrap.",
     },
   ];
 
@@ -155,15 +154,15 @@ const Resume = (props) => {
     /* Interests */
     <div className="resume-screen-container" key="interests">
       <ResumeHeading
-        heading="Teaching"
+        heading="Problem solving"
         description="Apart from being a tech enthusiast and a code writer, i also love to teach people what i know simply because i believe in sharing."
       />
       <ResumeHeading
-        heading="Music"
+        heading="Cardio Exercise"
         description="Listening to soothing music is something i can never compromise with, skimming through Spotify's pop songs charts is at times the best stress reliever that i can get my hands on."
       />
       <ResumeHeading
-        heading="Competitive Gaming"
+        heading="Traveling"
         description="I like to challenge my reflexes a lot while competing in football games, pushing the rank and having interactive gaming sessions excites me the most."
       />
     </div>,
